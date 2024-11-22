@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:50 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/22 14:59:11 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/22 17:40:05 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@
 char	*get_next_line(int fd);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
-
+size_t	ft_strlen(const char *s);
 #endif

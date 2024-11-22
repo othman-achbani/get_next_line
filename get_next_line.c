@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:12 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/22 17:33:46 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/22 17:48:28 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,11 +79,18 @@ char	*ft_remaining(char *str)
 {
 	int		len;
 	char	*buffer;
+	int		i;
 
 	len = 0;
+	i = 0;	
 	while (str[len] && str[len] != 10)
 		len++;
-	buffer = (char *)
-	
-
+	buffer = (char *)malloc(ft_strlen(str) - len);
+	if (!buffer)
+		return(NULL);
+	len++;
+	while(str[len] && str[len] != '\n')
+		buffer[i++] = str[len++];
+	free(str);
+	return(buffer);
 }
