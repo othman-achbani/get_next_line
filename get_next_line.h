@@ -16,9 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # ifndef BUFFER_SIZE
-# define BUFFER_SIZE 2147483647
+#  define BUFFER_SIZE 2147483647
 
-#endif
+# endif
 
 char	*get_next_line(int fd);
 char	*ft_strchr(const char *str, int c);
