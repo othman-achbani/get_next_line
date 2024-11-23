@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:12 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/23 15:53:24 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:58:33 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ char	*get_next_line(int fd)
 	line = ft_remaining(line);
 	return(save);
 }
-#include <fcntl.h>
+/*#include <fcntl.h>
 #include <stdio.h>
 int main()
 {
@@ -126,3 +126,4 @@ int main()
     close(fd);
     return (0);
 }
+*/
