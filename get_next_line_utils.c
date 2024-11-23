@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 14:39:17 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/22 22:41:51 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:45:15 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-char	*ft_strdup(const char *s)
+char	*ft_strdup(char *s)
 {
 	size_t	i;
 	char	*p;
@@ -49,6 +49,7 @@ char	*ft_strdup(const char *s)
 	i = -1;
 	while (s[++i])
 		p[i] = s[i];
+	p[i] = '\0';
 	return (p);
 }
 
@@ -58,12 +59,10 @@ char	*ft_strjoin(char *s1, char *s2)
 	char	*p;
 	int		j;
 
-	if (!s1 && !s2)
+	if (!s1)
+		s1 = ft_strdup("");
+	if (!s1 || !s2)
 		return (NULL);
-	if (!s1 && s2)
-		return (ft_strdup(s2));
-	if (s1 && !s2)
-		return (ft_strdup(s1));
 	i = ft_strlen(s1) + ft_strlen(s2);
 	p = malloc(i + 1);
 	if (!p)
@@ -74,5 +73,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		p[i] = s1[i];
 	while (s2[++j])
 		p[i++] = s2[j];
-	return (p);
+	p[i] = '\0';
+	free(s1);
+	return(p);
 }
