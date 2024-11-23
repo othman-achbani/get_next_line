@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:12 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/23 15:47:21 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:53:24 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,7 @@ char	*get_next_line(int fd)
 #include <stdio.h>
 int main()
 {
-    int fd = open("test.txt",O_CREAT | O_RDONLY);
+    int fd = open("test.txt",O_RDONLY);
     char *line;
     
     if (fd == -1)

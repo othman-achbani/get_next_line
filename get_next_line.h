@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:50 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/23 13:58:34 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/23 15:54:39 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # ifndef BUFFER_SIZE
-# define BUFFER_SIZE 1
+# define BUFFER_SIZE 2147483647
 
 #endif
 
