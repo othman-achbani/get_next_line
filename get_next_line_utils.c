@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 14:39:17 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/24 10:58:41 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/24 11:34:32 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	i = ft_strlen(s1) + ft_strlen(s2);
 	p = malloc(i + 1);
 	if (!p)
-		return (NULL);
+		return (free(s1), NULL);
 	i = -1;
 	j = -1;
 	while (s1[++i])

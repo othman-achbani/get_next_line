@@ -6,7 +6,7 @@
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 15:26:12 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/23 15:58:33 by oachbani         ###   ########.fr       */
+/*   Updated: 2024/11/24 11:51:15 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_extract(char *str)
 		len++;
 	buffer = (char *)malloc(len + 2);
 	if (!buffer)
-		return (NULL);
+		return (free(str), NULL);
 	len = 0;
 	while (str[len] && str[len] != '\n')
 	{
@@ -77,7 +77,7 @@ char	*ft_remaining(char *str)
 		return (free(str), NULL);
 	buffer = malloc(ft_strlen(str) - clear + 1);
 	if (!buffer)
-		return (NULL);
+		return (free(str), NULL);
 	clear++;
 	while (str[clear])
 		buffer[save++] = str[clear++];
@@ -100,6 +100,7 @@ char	*get_next_line(int fd)
 	if (!save)
 	{
 		free(line);
+		line = NULL;
 		return (NULL);
 	}
 	line = ft_remaining(line);
@@ -128,5 +129,4 @@ int	main(void)
     }
     close(fd);
     return (0);
-}
-*/
+}*/
