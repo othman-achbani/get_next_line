@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oachbani <oachbani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/22 14:39:17 by oachbani          #+#    #+#             */
-/*   Updated: 2024/11/24 10:58:41 by oachbani         ###   ########.fr       */
+/*   Created: 2024/11/24 09:33:15 by oachbani          #+#    #+#             */
+/*   Updated: 2024/11/24 10:58:52 by oachbani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strchr(char *str, int c)
 {
